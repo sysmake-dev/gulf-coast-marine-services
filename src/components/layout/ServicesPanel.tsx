@@ -40,7 +40,7 @@ function ServicesPanel({ onCloseMenu }: { onCloseMenu: () => void }) {
           {services.map((service) => (
             <li key={service.slug}>
               <a
-                href={`/#/services/${service.slug}`}
+                href={`/gulf-coast-marine-services/#/services/${service.slug}`}
                 onClick={handleServiceClick}
               >
                 {service.title}

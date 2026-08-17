@@ -1,0 +1,21 @@
+/* ================================
+    DESIGN TOKENS
+    ================================= */
+
+:root {
+  /* Brand */
+  --color-primary: #176b87;
+  --color-secondary: #124b63;
+  --color-accent: #d9b36c;
+
+  /* Text */
+  --color-primary-text: #26383d;
+  --color-secondary-text: #5f6368;
+
+  /* Surfaces */
+  --color-surface-bg: #ffffff;
+  --color-surface-border: #dadce0;
+
+  /* Background */
+  --color-bg: #f5f7f6;
+}

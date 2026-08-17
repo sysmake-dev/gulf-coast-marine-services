@@ -1,0 +1,210 @@
+/* ================================
+   ABOUT PAGE HERO
+  ================================= */
+
+#about-hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/images/about/about-us-hero.jpg");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#about-hero p {
+  color: var(--color-bg);
+}
+
+/* ================================
+   ABOUT PAGE WHO WE ARE
+  ================================= */
+
+#about-us {
+  width: 100%;
+  padding: 4rem 1rem;
+}
+
+/* ================================
+   ABOUT PAGE BUILT FOR SWFL
+  ================================= */
+
+#about-local {
+  width: 100%;
+  padding: 4rem 1rem;
+}
+
+.about-local__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "image"
+    "content";
+  gap: 2rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-local__image {
+  grid-area: image;
+  width: 100%;
+}
+
+.about-local__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.about-local__content {
+  grid-area: content;
+}
+
+.about-local__content h2 {
+  margin-bottom: 1rem;
+}
+
+.about-local__content p {
+  max-width: 60ch;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+/* Desktop */
+
+@media (min-width: 801px) {
+  #about-local {
+    padding: 5rem 2rem;
+  }
+
+  .about-local__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image content";
+    gap: 4rem;
+  }
+}
+
+/* ================================
+   ABOUT PAGE OUR VALUES
+  ================================= */
+
+#our-values {
+  padding: 1rem;
+  margin-top: 1rem;
+  background: var(--color-surface-bg);
+}
+
+.grid__values {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.value__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  padding: 2rem;
+  border: 2px solid var(--color-surface-border);
+  border-radius: 15px;
+  background-color: var(--color-bg);
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.value__item:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+.value__item-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1.25rem;
+  color: var(--color-primary);
+}
+
+.value__item-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.value__item-content h3 {
+  margin: 0 0 1.25rem;
+  line-height: 1.25;
+}
+
+.value__item-content p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Tablets */
+
+@media (min-width: 600px) {
+  .value__item {
+    width: calc(50% - 1rem);
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1000px) {
+  .value__item {
+    width: calc(33.333% - 1.333rem);
+    max-width: 350px;
+  }
+}
+
+/* Larger screens */
+
+@media (min-width: 1400px) {
+  .grid__values {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ================================
+   ABOUT PAGE CTA
+  ================================= */
+
+#about-cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 50vh;
+  text-align: center;
+  padding-bottom: 8rem;
+}
+
+.cta__container--about {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cta__container--about p {
+  color: var(--color-primary-text);
+}
+
+.cta__container--about .button-secondary {
+  color: var(--color-primary-text);
+}

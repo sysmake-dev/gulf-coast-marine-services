@@ -1,0 +1,222 @@
+/* ================================
+   INDIVIDUAL SERVICE PAGE
+  ================================= */
+
+/* ================================
+   SERVICE PAGE HERO
+  ================================= */
+
+#service-hero {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#service-hero p {
+  color: var(--color-bg);
+}
+
+/* ================================
+   SERVICE PAGE PROVIDE
+  ================================= */
+
+#service__provide {
+  background: var(--color-surface-bg);
+}
+
+/* ================================
+   SERVICE PAGE APPROACH
+  ================================= */
+
+#service__approach {
+  background: var(--color-surface-bg);
+}
+
+/* ================================
+   SERVICE PAGE WHAT'S INCLUDED
+  ================================= */
+
+.service-offer__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.service-offer__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 2px solid var(--color-surface-border);
+  border-radius: 15px;
+  background: var(--color-bg);
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-offer__item:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+.service-offer__marker {
+  flex-shrink: 0;
+  color: var(--color-accent);
+  font-size: 0.75rem;
+}
+
+.service-offer__item h3 {
+  margin: 0;
+  color: var(--color-secondary);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.service-offer__item p {
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+/* ================================
+   SERVICE PAGE CONSIDERATIONS
+  ================================= */
+
+.service-consider__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.service-consider__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 2px solid var(--color-surface-border);
+  border-radius: 15px;
+  background: var(--color-surface-bg);
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-consider__item:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+.service-consider__marker {
+  flex-shrink: 0;
+  color: var(--color-accent);
+  font-size: 0.75rem;
+}
+
+.service-consider__item h3 {
+  margin: 0;
+  color: var(--color-secondary);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.service-consider__list p {
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+/* ================================
+   SERVICE PAGE FAQ
+  ================================= */
+
+#service__faq {
+  background: var(--color-surface-bg);
+  padding-bottom: 9rem;
+}
+
+.service__faq {
+  padding: 5rem 1rem;
+}
+
+.service__faq .container {
+  margin: 0 auto;
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq__item {
+  border: 2px solid var(--color-surface-border);
+  border-radius: 15px;
+  overflow: hidden;
+  background: var(--color-bg);
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.faq__item:hover {
+  transform: translateY(-2px);
+  border: 2px solid var(--color-primary);
+}
+
+.faq__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font: inherit;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.faq__question:hover {
+  background: color-mix(in oklch, var(--color-bg), gray 5%);
+}
+
+.faq__question:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.faq__question-text {
+  font-size: 1.3rem;
+  color: var(--color-secondary);
+}
+
+.faq__question span:last-child {
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.faq__answer {
+  margin: 0;
+  padding: 0 1.5rem 1.25rem;
+  line-height: 1.7;
+  color: var(--color-primary-text);
+}

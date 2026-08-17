@@ -1,0 +1,232 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+/* Header */
+
+.header {
+  border-bottom: 2px solid black;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: none;
+}
+
+.nav__toggle {
+  font-size: 1.5rem;
+  border: 2px solid black;
+  background: none;
+}
+
+/* Hero */
+
+#hero {
+  text-align: center;
+  min-height: 80vh;
+}
+
+.hero__container {
+  margin-top: 4rem;
+}
+
+.hero__buttons {
+  margin-top: 1rem;
+}
+
+.hero__buttons button {
+  margin: 0.25rem;
+  padding: 0.75rem;
+  border: 2px solid black;
+  background: none;
+}
+
+/* Services */
+
+#services {
+  border: 2px solid black;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.services__grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.service__item {
+  border: 2px solid black;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.service__item button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: 2px solid black;
+  background: none;
+  width: 100%;
+}
+
+#services .view-all {
+  margin-top: 1rem;
+}
+
+#services .view-all button {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid black;
+  background: none;
+}
+
+/* About */
+
+#about {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+#about img {
+  width: 100%;
+}
+
+.about__content button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: 2px solid black;
+  background: none;
+  width: 100%;
+}
+
+/* Why Choose Us */
+
+#why-us {
+  border: 2px solid black;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.why-us__item {
+  border: 2px solid black;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* Service Area */
+
+#service-area {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.service-area__list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.service-area__item {
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+#service-area button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: 2px solid black;
+  background: none;
+  width: 100%;
+}
+
+/* Call to Action */
+
+#cta {
+  border: 2px solid black;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.cta__buttons {
+  margin-top: 1rem;
+}
+
+.cta__buttons button {
+  display: block;
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border: 2px solid black;
+  background: none;
+}
+
+/* Contact */
+
+#contact {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.contact__info {
+  border: 2px solid black;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.contact__form {
+  margin-top: 1.5rem;
+}
+
+.contact__form input,
+.contact__form select,
+.contact__form textarea {
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border: 2px solid black;
+}
+
+.contact__form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact__form button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid black;
+  background: none;
+}
+
+/* Footer */
+
+footer {
+  border-top: 2px solid black;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+}
